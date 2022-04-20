@@ -1,0 +1,200 @@
+@import "normalize.css";
+@import "reset.css";
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 1rem;
+    color: #333333;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+.container {
+    max-width: 83.44rem;
+    margin: 0 auto;
+    padding: 0 0.94rem;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: #FED100;
+    padding: 2.5rem 0 5.3rem;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+.menu {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu-logo {
+    font-weight: 600;
+    font-size: 1.87rem;
+    line-height: 123%;
+    color: #333333;
+}
+
+.menu-item {
+    margin-right: 3.1rem;
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.menu-link {
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 122%;
+    color: #333333;
+}
+
+.menu-tel {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 121%;
+    color: #333333;
+    position: relative;
+}
+
+.menu-tel::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #333333;
+}
+
+.header-info-box {
+    position: relative;
+}
+
+.header-info__title {
+    font-weight: 700;
+    font-size: 4.4rem;
+    max-width: 30rem;
+    line-height: 105.4%;
+    padding-bottom: 1.75rem;
+}
+
+.header-info__city {
+    font-weight: 600;
+    font-size: 1.87rem;
+    line-height: 123%;
+    padding-bottom: 3.125rem;
+}
+
+.header-info__btn {
+    height: 3.75rem;
+    width: 19rem;
+    background: #FF352B;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 121%;
+    color: #F2F2F2;
+    cursor: pointer;
+    position: relative;
+}
+
+/* .header-info__btn::after {
+    position: absolute;
+    content: '';
+    width: 19rem;
+    height: 3.75rem;
+    border: 2px solid #F2F2F2;
+} */
+
+.header-men {
+    position: absolute;
+    right: 2.4rem;
+    bottom: -5.3rem;
+}
+
+.achievements {
+    padding-top: 4rem;
+    display: flex;
+}
+
+.achievements-item:first-child {
+    font-weight: 400;
+    line-height: 131%;
+    max-width: 5.7rem;
+    margin-left: 3.875rem;
+    position: relative;
+}
+
+.achievements-item:nth-child(2) {
+    font-weight: 400;
+    line-height: 131%;
+    max-width: 5.7rem;
+    margin-left: 5.625rem;
+    position: relative;
+}
+
+.achievements-item:last-child {
+    font-weight: 400;
+    line-height: 131%;
+    max-width: 8.5rem;
+    margin-left: 4.87rem;
+    position: relative;
+}
+
+.achievements-item::before {
+    position: absolute;
+    content: '';
+    background: url('../img/truck.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 3.25rem;
+    height: 2.5rem;
+    left: -3.8rem;
+}
+
+.achievements-item:nth-child(2)::before {
+    position: absolute;
+    content: '';
+    background: url('../img/triggerTwo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2.5rem;
+    height: 2.4rem;
+    left: -3.12rem;
+}
+
+.achievements-item:last-child::before {
+    position: absolute;
+    content: '';
+    background: url('../img/money.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2.5rem;
+    height: 2.6rem;
+    left: -3.12rem;
+}
